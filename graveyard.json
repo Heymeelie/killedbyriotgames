@@ -1,4 +1,11 @@
 [{
+    "dateClose": "2025-06-23",
+    "dateOpen": "2020-04-16",
+    "description": "A highly anticipated Minecraft-inspired sandbox RPG. Acquired by Riot Games in 2020, the project suffered various hurdles and was canceled in June 2025. Hytale was sold back to the original developers in November 2025.",
+    "link": "https://web.archive.org/web/20250630001418/https://hytale.com/news/2025/6/a-difficult-update-about-hytale",
+    "name": "Hytale",
+    "type": "app"
+}, {
     "dateClose": "2024-01-10",
     "dateOpen": "2021-01-01",
     "description": "Mythic item was one of the item classifications in League of Legends.",
