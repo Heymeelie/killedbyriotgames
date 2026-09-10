@@ -27,17 +27,15 @@ const Title = styled.h1(() => css({
 
 const Header = () => (
     <HeaderContainer>
-        <Link href="/" passHref>
-            <a rel="noreferrer noopener" style={{
-                borderBottom: 0,
-            }}>
-                <BrandingContainer>
-                        <Logo>
-                            <img width="60px" src="tombstone.svg" height="60px" alt="Tombstone" />
-                        </Logo>
-                        <Title>Killed by Riot Games</Title>
-                </BrandingContainer>
-            </a>
+        <Link href="/" rel="noreferrer noopener" style={{
+            borderBottom: 0,
+        }}>
+            <BrandingContainer>
+                    <Logo>
+                        <img width="60px" src="tombstone.svg" height="60px" alt="Tombstone" />
+                    </Logo>
+                    <Title>Killed by Riot Games</Title>
+            </BrandingContainer>
         </Link>
     </HeaderContainer>
 );

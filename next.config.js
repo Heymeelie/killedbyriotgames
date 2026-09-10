@@ -1,23 +1,26 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    // Pin the Turbopack workspace root; without it Next walks up past the repo
+    // and picks up unrelated lockfiles in the parent directory.
+    turbopack: {
+        root: __dirname,
+    },
     env: {
         mode: process.env.NODE_ENV,
     },
-    webpack(config) {
-        config.module.rules.push({
-            test: /\.svg$/,
-            use: ["@svgr/webpack"]
-        });
-
-        return config;
+    compiler: {
+        // Replaces the old .babelrc (@emotion/babel-preset-css-prop) with
+        // Next's built-in SWC transform for Emotion's css prop.
+        emotion: true,
     },
-    redirects() {
+    async redirects() {
         return [{
             source: '/graveyard.json',
             destination: '/api/graveyard',
             permanent: true,
         }, ];
     },
-    rewrites() {
+    async rewrites() {
         return [{
                 source: '/umami.js',
                 destination: 'https://a.challenges.gg/umami.js'
@@ -29,3 +32,5 @@ module.exports = {
         ]
     },
 };
+
+module.exports = nextConfig;

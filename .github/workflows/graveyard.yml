@@ -10,13 +10,12 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: '16.x'
-      - name: Install Yarn
-        run: npm install yarn
+          node-version-file: '.nvmrc'
+          cache: 'npm'
       - name: Install dependencies
-        run: yarn
+        run: npm ci
       - name: Run Tests
-        run: yarn run test
+        run: npm test

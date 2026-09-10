@@ -34,7 +34,7 @@ const soonToDieIdiom = () => {
 };
 
 const LeadPhrase: FC<Props> = ({ relativeDate }) => {
-    const idiom = useMemo(soonToDieIdiom, []);
+    const idiom = useMemo(() => soonToDieIdiom(), []);
     return <span>{`${idiom} in ${relativeDate}, `}</span>;
 };
 

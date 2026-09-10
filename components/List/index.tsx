@@ -108,16 +108,19 @@ const AdPlaceholder = styled.a(() => css({
     },
 }));
 
-export const FallbackAd = () => <Link passHref href="https://twitter.com/killedbygoogle">
-    <AdPlaceholder target="_blank" rel="noopener noreferrer">
+export const FallbackAd = () => <AdPlaceholder
+    as={Link}
+    href="https://twitter.com/killedbygoogle"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <div>
         <div>
-            <div>
-                <img src="twitter-blue.svg" alt="Twitter" />
-            </div>
-            <div>Follow @killedbygoogle on Twitter.</div>
+            <img src="twitter-blue.svg" alt="Twitter" />
         </div>
-    </AdPlaceholder>
-</Link>;
+        <div>Follow @killedbygoogle on Twitter.</div>
+    </div>
+</AdPlaceholder>;
 
 const showAd = () => {
     if (process.env.NODE_ENV === 'production')
