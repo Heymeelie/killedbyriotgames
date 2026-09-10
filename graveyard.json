@@ -1,4 +1,11 @@
 [{
+    "dateClose": "2026-01-20",
+    "dateOpen": "2026-12-31",
+    "description": "A free-to-play 2v2 tag-team fighting game set in the League of Legends universe (orig Project L).",
+    "link": "https://www.riotgames.com/en/news/2xko-active-development-ends-december-2026",
+    "name": "2XKO",
+    "type": "app"
+}, {
     "dateClose": "2025-06-23",
     "dateOpen": "2020-04-16",
     "description": "A highly anticipated Minecraft-inspired sandbox RPG. Acquired by Riot Games in 2020, the project suffered various hurdles and was canceled in June 2025. Hytale was sold back to the original developers in November 2025.",
