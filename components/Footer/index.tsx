@@ -17,25 +17,24 @@ const SocialLink: FC<{ url: string; imgSrc: string; altText: string }> = ({
     };
 
     return (
-        <Link href={url} passHref>
-            <a
+        <Link
+            href={url}
+            style={{
+                border: 'none',
+            }}
+            target='_blank'
+            rel='noopener noreferrer'
+        >
+            <img
                 style={{
-                    border: 'none',
+                    width: '24px',
+                    height: '24px',
                 }}
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-                <img
-                    style={{
-                        width: '24px',
-                        height: '24px',
-                    }}
-                    width='24px'
-                    height='24px'
-                    src={imgSrc}
-                    alt={altText}
-                />
-            </a>
+                width='24px'
+                height='24px'
+                src={imgSrc}
+                alt={altText}
+            />
         </Link>
     );
 };
