@@ -1,4 +1,11 @@
 [{
+    "dateClose": "2027-01-06",
+    "dateOpen": "2026-07-29",
+    "description": "League Classic aims to recreate the gameplay of earlier versions of the League of Legends. The general time frame for most features is Season Three.",
+    "link": "https://www.leagueoflegends.com/en-us/news/dev/dev-league-classic",
+    "name": "League Classic",
+    "type": "gamemode"
+}, {
     "dateClose": "2026-01-20",
     "dateOpen": "2026-12-31",
     "description": "A free-to-play 2v2 tag-team fighting game set in the League of Legends universe (orig Project L).",
